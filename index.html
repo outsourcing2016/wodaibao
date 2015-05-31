@@ -1,11 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8"/>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/style.css" />
+<meta charset="UTF-8"/>
+<script src="js/jquery.min.js"></script>
+<script src="js/radialIndicator.min.js"></script>
+<link rel="stylesheet" href="css/index.css" />
 </head>
 <body>
     <div class="header">
@@ -38,42 +37,295 @@
             </ul>
         </div>
     </div>
-    <div class="banner">
-        <div class="banner-login">
-            <div class="banner-login-top">
-                <span class="banner-login-span1">沃贷宝</span>金融年化收益率<br/>最高&nbsp;<span class="banner-login-span2">13.8%</span>&nbsp;<span>30</span>倍活期存款收益
-            </div>
-            <div class="banner-login-bottom">
-                <a href="#" class="banner-login-bottom-reg"><span class="banner-login-bottom-span1">免费注册</span><span class="banner-login-bottom-span2">尊享稳定收益</span></a>
-                <a href="#" class="banner-login-bottom-log"><span class="banner-login-bottom-span2">以后账号?&nbsp;></span><span class="banner-login-bottom-span1">立即登录</span></a>
+    <div class="focus" id="focus">
+        <div class="login_box">
+            <div class="login">
+                <div class="login-top">
+                    <span class="login-span1">沃贷宝</span>金融年化收益率<br/>最高&nbsp;<span class="login-span2">13.8%</span>&nbsp;<span>30</span>倍活期存款收益
+                </div>
+                <div class="login-bottom">
+                    <a href="#" class="login-bottom-reg"><span class="login-bottom-span1">免费注册</span><span class="login-bottom-span2">尊享稳定收益</span></a>
+                    <a href="#" class="login-bottom-log"><span class="login-bottom-span2">已有账号?&nbsp;></span><span class="login-bottom-span1">立即登录</span></a>
+                </div>
             </div>
         </div>
-        <!-- Slider Container -->
-        <section class="slider-container">
-            <ul id="slider" class="slider-wrapper">
-                <li class="slide-current">
-                    <a href="#"><img src="./img/banner.jpg" alt="幻灯片1"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="./img/banner.jpg" alt="幻灯片2"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="./img/banner.jpg" alt="幻灯片3"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="./img/banner.jpg" alt="幻灯片4"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="./img/banner.jpg" alt="幻灯片5"></a>
-                </li>
+        <div id="focus_m" class="focus_m">
+            <ul>
+                <a href="#"><li class="li_1"></li></a>
+                <a href="#"><li class="li_2"></li></a>
+                <a href="#"><li class="li_3"></li></a>
             </ul>
-            <!-- Controles -->
-            <ul id="slider-controls" class="slider-controls"></ul>
-        </section>
+        </div>
+        <script src="js/slider.js"></script>
     </div>
-    <div class="news"></div>
-    <div class="advantage"></div>
-    <div class="project-list"></div>
+    <div class="news">
+        <div class="news-wrap">
+            <div class="news-line"><a href="#" class="news-s1">【通知】关于沃贷宝支付业务的维护通知</a><a href="#" class="news-s3">更多>></a><span class="news-s2">2015-05-13</span></div>
+            <div class="news-line"><a href="#" class="news-s1">【还款】2015-1-4还款公告</a><a href="#" class="news-s3">更多>></a><span class="news-s2">2015-01-04</span></div>
+        </div>
+    </div>
+    <div class="advantage">
+        <div class="advantage-wrap">
+            <div class="advantage-b">
+                <div class="advantage-b-1 advantage-b-icon1"></div>
+                <div class="advantage-b-2">8%-12%高收益</div>
+                <div class="advantage-b-3">低门槛<br/>高收益<br/>年化收益最高达12%</div>
+            </div>
+            <div class="advantage-b">
+                <div class="advantage-b-1 advantage-b-icon2"></div>
+                <div class="advantage-b-2">100%本息保障</div>
+                <div class="advantage-b-3">25%风险备用金<br/>引入大型国企背景担保公司</div>
+            </div>
+            <div class="advantage-b">
+                <div class="advantage-b-1 advantage-b-icon3"></div>
+                <div class="advantage-b-2">风控体系</div>
+                <div class="advantage-b-3">实地考察、超值抵押<br/>发布项目小额短期<br/>平台交易实时监控</div>
+            </div>
+            <div class="advantage-b">
+                <div class="advantage-b-1 advantage-b-icon4"></div>
+                <div class="advantage-b-2">资金安全</div>
+                <div class="advantage-b-3">第三方支付平台全程托管<br/>资金全程监控</div>
+            </div>
+        </div>
+    </div>
+    <div class="project">
+        <div class="pro-tit">投资项目</div>
+        <div class="pro-list">
+            <ul>
+                <li class="pro-list-head">
+                    <span class="pro-li-head-l"></span>
+                    <span class="pro-li-1">项目</span>
+                    <span class="pro-li-2"></span>
+                    <span class="pro-li-3">年利率</span>
+                    <span class="pro-li-4">金额</span>
+                    <span class="pro-li-3">期限</span>
+                    <span class="pro-li-5">进度</span>
+                    <span class="pro-li-6">操作</span>
+                    <span class="pro-li-head-r"></span>
+                </li>
+                <li class="pro-list-body">
+                    <span class="pro-li-body-l"></span>
+                    <span class="pro-li-1"><a href="#">购买家电和现有房屋的装修</a></span>
+                    <span class="pro-li-2"><a href="#"></a></span>
+                    <span class="pro-li-3"><em class="pro-li-em1">23.6</em>&nbsp;%</span>
+                    <span class="pro-li-4"><em class="pro-li-em2">400,000</em>&nbsp;元</span>
+                    <span class="pro-li-3"><em class="pro-li-em2">12</em>&nbsp;个月</span>
+                    <span class="pro-li-5 progress" beginDate="1433043951709" percentage="0"></span>
+                    <span class="pro-li-body-r"></span>
+                </li>
+                <li class="pro-list-body">
+                    <span class="pro-li-body-l"></span>
+                    <span class="pro-li-1"><a href="#">烟台某婴童用品有限公司</a></span>
+                    <span class="pro-li-2"><a href="#"></a></span>
+                    <span class="pro-li-3"><em class="pro-li-em1">12</em>&nbsp;%</span>
+                    <span class="pro-li-4"><em class="pro-li-em2">250,000</em>&nbsp;元</span>
+                    <span class="pro-li-3"><em class="pro-li-em2">3</em>&nbsp;个月</span>
+                    <span class="pro-li-5 progress" percentage="100"></span>
+                    <span class="pro-li-body-r"></span>
+                </li>
+                <li class="pro-list-body">
+                    <span class="pro-li-zhuan"></span>
+                    <span class="pro-li-body-l"></span>
+                    <span class="pro-li-1"><a href="#">资金周转</a></span>
+                    <span class="pro-li-2"><a href="#"></a></span>
+                    <span class="pro-li-3"><em class="pro-li-em1">12.6</em>&nbsp;%</span>
+                    <span class="pro-li-7"><em class="pro-li-em3">750,000</em>&nbsp;元<br /><em class="pro-li-em2">645,000</em>&nbsp;元</span>
+                    <span class="pro-li-3"><em class="pro-li-em2">36</em>&nbsp;个月</span>
+                    <span class="pro-li-5"></span>
+                    <span class="pro-li-6"><a href="#" class="pro-go">立即投资</a></span>
+                    <span class="pro-li-body-r"></span>
+                </li>
+                <li class="pro-list-body">
+                    <span class="pro-li-zhuan"></span>
+                    <span class="pro-li-body-l"></span>
+                    <span class="pro-li-1"><a href="#">安车贷-杭州-奔驰S350L-单笔限额1万元整</a></span>
+                    <span class="pro-li-2"><a href="#"></a></span>
+                    <span class="pro-li-3"><em class="pro-li-em1">11</em>&nbsp;%</span>
+                    <span class="pro-li-7"><em class="pro-li-em3">120,000</em>&nbsp;元<br /><em class="pro-li-em2">115,000</em>&nbsp;元</span>
+                    <span class="pro-li-3"><em class="pro-li-em2">3</em>&nbsp;个月</span>
+                    <span class="pro-li-5"></span>
+                    <span class="pro-li-6"><a href="#" class="pro-go">立即投资</a></span>
+                    <span class="pro-li-body-r"></span>
+                </li>
+                <li class="pro-list-body">
+                    <span class="pro-li-zhuan"></span>
+                    <span class="pro-li-body-l"></span>
+                    <span class="pro-li-1"><a href="#">扩大生产/经营</a></span>
+                    <span class="pro-li-2"><a href="#"></a></span>
+                    <span class="pro-li-3"><em class="pro-li-em1">10.8</em>&nbsp;%</span>
+                    <span class="pro-li-7"><em class="pro-li-em3">250,000</em>&nbsp;元<br /><em class="pro-li-em2">225,000</em>&nbsp;元</span>
+                    <span class="pro-li-3"><em class="pro-li-em2">2</em>&nbsp;个月</span>
+                    <span class="pro-li-5"></span>
+                    <span class="pro-li-6"><a href="#" class="pro-go">立即投资</a></span>
+                    <span class="pro-li-body-r"></span>
+                </li>
+                <li class="pro-list-body">
+                    <span class="pro-li-body-l"></span>
+                    <span class="pro-li-1"><a href="#">购买货物/原材/设备</a></span>
+                    <span class="pro-li-2"><a href="#"></a></span>
+                    <span class="pro-li-3"><em class="pro-li-em1">13.2</em>&nbsp;%</span>
+                    <span class="pro-li-4"><em class="pro-li-em2">107,900</em>&nbsp;元</span>
+                    <span class="pro-li-3"><em class="pro-li-em2">24</em>&nbsp;个月</span>
+                    <span class="pro-li-5"></span>
+                    <span class="pro-li-6"><a href="#" class="pro-go">立即投资</a></span>
+                    <span class="pro-li-body-r"></span>
+                </li>
+                 <li class="pro-list-body">
+                    <span class="pro-li-body-l"></span>
+                    <span class="pro-li-1"><a href="#">NC2014072301企业经营贷款</a></span>
+                    <span class="pro-li-2"><a href="#"></a></span>
+                    <span class="pro-li-3"><em class="pro-li-em1">12</em>&nbsp;%</span>
+                    <span class="pro-li-4"><em class="pro-li-em2">2,000,000</em>&nbsp;元</span>
+                    <span class="pro-li-3"><em class="pro-li-em2">6</em>&nbsp;个月</span>
+                    <span class="pro-li-5"></span>
+                    <span class="pro-li-6"><a href="#" class="pro-done">已满标</a></span>
+                    <span class="pro-li-body-r"></span>
+                </li>
+                <li class="pro-list-body">
+                    <span class="pro-li-body-l"></span>
+                    <span class="pro-li-1"><a href="#">二次诚信借款扩大经营短期周转</a></span>
+                    <span class="pro-li-2"><a href="#"></a></span>
+                    <span class="pro-li-3"><em class="pro-li-em1">10.4</em>&nbsp;%</span>
+                    <span class="pro-li-4"><em class="pro-li-em2">130,000</em>&nbsp;元</span>
+                    <span class="pro-li-3"><em class="pro-li-em2">24</em>&nbsp;个月</span>
+                    <span class="pro-li-5"></span>
+                    <span class="pro-li-6"><a href="#" class="pro-done">已满标</a></span>
+                    <span class="pro-li-body-r"></span>
+                </li>
+                <li class="pro-list-body">
+                    <span class="pro-li-body-l"></span>
+                    <span class="pro-li-1"><a href="#">日常生活消费</a></span>
+                    <span class="pro-li-2"><a href="#"></a></span>
+                    <span class="pro-li-3"><em class="pro-li-em1">8</em>&nbsp;%</span>
+                    <span class="pro-li-4"><em class="pro-li-em2">94,000</em>&nbsp;元</span>
+                    <span class="pro-li-3"><em class="pro-li-em2">10</em>&nbsp;个月</span>
+                    <span class="pro-li-5"></span>
+                    <span class="pro-li-6"><a href="#" class="pro-done">已满标</a></span>
+                    <span class="pro-li-body-r"></span>
+                </li>
+                <li class="pro-list-body pro-list-last">
+                    <span class="pro-li-body-l"></span>
+                    <span class="pro-li-1"><a href="#">微商进货经营</a></span>
+                    <span class="pro-li-2"><a href="#"></a></span>
+                    <span class="pro-li-3"><em class="pro-li-em1">5.6</em>&nbsp;%</span>
+                    <span class="pro-li-4"><em class="pro-li-em2">5,000</em>&nbsp;元</span>
+                    <span class="pro-li-3"><em class="pro-li-em2">0.5</em>&nbsp;个月</span>
+                    <span class="pro-li-5"></span>
+                    <span class="pro-li-6"><a href="#" class="pro-done">已满标</a></span>
+                    <span class="pro-li-body-r"></span>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
     <div class="partner"></div>
 </body>
+<script>
+var Progress = function(timeDisplay, endDate, percentage) {
+    this.timeDisplay = timeDisplay;
+    this.endDate = endDate;
+    this.percentage = percentage;
+    this.hasGo = false;
+    if (!this.isOver()) {
+        this.displayTime();
+        var proReady = '<span class="pro-li-6"><a href="#" class="pro-ready">即将开始</a></span>';
+        $(proReady).insertAfter(timeDisplay);
+    } else {
+        this.displayPer();
+        this.hasGo = true;
+    }
+}
+Progress.prototype = {
+    setIntervalId : function(intervalId) {
+        this.intervalId = intervalId;
+    },
+    isOver : function() {
+        var ts = this.endDate - (new Date());//计算剩余的毫秒数
+        if (ts <= 0) {
+            return true;
+        } else {
+            return false;
+        }
+    },
+    displayTime : function() {
+        var ts = this.endDate - (new Date());//计算剩余的毫秒数
+        var dd = parseInt(ts / 1000 / 60 / 60 / 24, 10);//计算剩余的天数  
+        var hh = parseInt(ts / 1000 / 60 / 60 % 24, 10);//计算剩余的小时数  
+        var mm = parseInt(ts / 1000 / 60 % 60, 10);//计算剩余的分钟数  
+        var ss = parseInt(ts / 1000 % 60, 10);//计算剩余的秒数  
+        this.timeDisplay.innerHTML = dd + "天" + hh + "时" + mm + "分" + ss + "秒";  
+    },
+    walk : function() {
+        if (!this.isOver()) {
+            this.displayTime();
+        }
+        if (this.isOver()) {
+            clearInterval(this.intervalId);
+            if (!this.hasGo) {
+                this.displayPer();
+                this.hasGo = true;
+            }
+        }
+    },
+    displayPer : function() {
+        this.timeDisplay.innerHTML = "";
+
+        var indicatorContainer = $("<div class='indicatorContainer'></div>");
+        var indicator = indicatorContainer.radialIndicator({
+            roundCorner: true,
+            radius: 22,
+            barWidth : 5,
+            barColor: {
+                0: '#cccccc',
+                1: '#eece50',
+                25: '#eeb450',
+                50: '#eb8c47',
+                75: '#e75252',
+                99: '#e75252',
+                100: '#cccccc'
+            },
+            percentage: true 
+        }).data("radialIndicator");
+        indicator.value(this.percentage);
+        indicatorContainer.appendTo(this.timeDisplay);
+
+        $(this.timeDisplay).next().remove();
+        var proGo = '<span class="pro-li-6"><a href="#" class="pro-go">立即投资</a></span>';
+        $(proGo).insertAfter(this.timeDisplay);
+    }
+}
+
+$('.progress').each(function() {
+    var percentage = parseInt($(this).attr("percentage"));
+    if (percentage == 100) {
+        var indicatorContainer = $("<div class='indicatorContainer'></div>");
+        var indicator = indicatorContainer.radialIndicator({
+            roundCorner: true,
+            radius: 22,
+            barWidth : 5,
+            barColor: {
+                0: '#cccccc',
+                1: '#eece50',
+                25: '#eeb450',
+                50: '#eb8c47',
+                75: '#e75252',
+                99: '#e75252',
+                100: '#cccccc'
+            },
+            percentage: true 
+        }).data("radialIndicator");
+        indicator.value(100);
+        indicatorContainer.appendTo(this);
+        var proDone = '<span class="pro-li-6"><a href="#" class="pro-done">已满标</a></span>';
+        $(proDone).insertAfter(this);
+    } else {
+        var beginDate = new Date(parseInt($(this).attr("beginDate")));
+        var progress = new Progress(this, beginDate, percentage);
+        var intervalId = setInterval(function() {
+            progress.walk()
+        }, 1000);
+        progress.setIntervalId(intervalId);
+    }
+});
+</script>
 </html>
